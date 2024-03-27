@@ -11,8 +11,9 @@ button.addEventListener("click", ()=> {
 
 const generate_qr = ()=>{
     if(qr_text.value ){
-    qr_div.classList.add("url");
+    
     img.src = "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=" + qr_text.value; 
+    qr_div.classList.add("url");
     console.log(img.src)
     }else {
         qr_div.classList.remove("url");
